@@ -1,5 +1,5 @@
 
-fetch('https://api.ipdata.co?api-key=f2759ae72498ad5e9d0200c8f46035d7cfa4f39ffdb6439e2669f12e').then(function(response) {
+fetch('GET https://ipapi.co/json/').then(function(response) {
   return response.json();
 }).then(function(data) {
   document.getElementById("ipaddress").value = (data.ip);
