@@ -1,5 +1,5 @@
 
-fetch('GET https://ipapi.co/json/').then(function(response) {
+fetch('https://ipapi.co/json/').then(function(response) {
   return response.json();
 }).then(function(data) {
   document.getElementById("ipaddress").value = (data.ip);
